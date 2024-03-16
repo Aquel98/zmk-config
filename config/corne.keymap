@@ -23,7 +23,7 @@
 &kp ESCAPE  &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P      &kp LEFT_BRACKET
 &kp DEL     &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
 &kp LSHFT   &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp RCTRL  &kp RIGHT_SHIFT
-                          &kp LALT  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
+                          &kp LALT  &mo 2  &kp SPACE    &kp RET  &mo 1  &kp RALT
             >;
         };
 
@@ -35,10 +35,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp EXCLAMATION  &kp QUESTION  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE        &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &kp AMPERSAND    &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans           &trans        &trans          &trans           &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                           &kp LGUI        &trans           &kp SPACE       &kp RET   &trans    &kp RALT
+&kp TAB     &kp EXCLAMATION  &kp QUESTION  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE       &kp SQT               &kp LESS_THAN  &kp GREATER_THAN  &kp DOLLAR  &kp DOUBLE_QUOTES  &kp BSPC
+&bt BT_CLR  &kp AMPERSAND    &kp HASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN    &kp NON_US_BACKSLASH  &kp RS(COMMA)  &kp RS(PERIOD)    &kp RS(N0)  &kp RS(SLASH)      &trans
+&kp LSHFT   &kp PERCENT      &kp CARET     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE      &trans                &trans         &trans            &trans      &trans             &trans
+                                           &kp LGUI              &trans                 &kp SPACE      &kp RET               &trans         &kp RALT
             >;
         };
 
