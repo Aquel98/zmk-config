@@ -61,7 +61,7 @@
             bindings = <
 &kp F1      &kp F2             &kp F3      &kp F4      &kp F5            &kp F6       &trans   &kp HOME         &kp UP_ARROW  &kp END          &trans   &trans
 &kp F7      &kp F8             &kp F9      &kp F10     &kp F11           &kp F12      &trans   &kp LEFT         &kp DOWN      &kp RIGHT_ARROW  &kp TAB  &trans
-&bt BT_NXT  &kp K_SCREENSAVER  &kp K_PREV  &kp K_NEXT  &kp K_PLAY_PAUSE  &trans       &trans   &kp LS(LA(TAB))  &trans        &kp LS(TAB)      &trans   &trans
+&bt BT_NXT  &kp K_SCREENSAVER  &kp K_PREV  &kp K_NEXT  &kp K_PLAY_PAUSE  &trans       &trans   &kp LS(LA(TAB))  &trans        &kp LA(TAB)      &trans   &trans
                                            &kp LGUI    &trans            &kp SPACE    &kp RET  &trans           &trans
             >;
         };
