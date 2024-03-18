@@ -12,7 +12,7 @@
         Lock: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LEFT_WIN) &kp L>;
+            bindings = <&sk LEFT_WIN &kp L>;
             label = "NEW_MACRO";
         };
     };
@@ -31,7 +31,7 @@
 &kp ESCAPE     &kp Q  &kp W  &kp E             &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P      &kp LEFT_BRACKET
 &kp BACKSPACE  &kp A  &kp S  &kp D             &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
 &kp LSHFT      &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp RCTRL  &kp RIGHT_SHIFT
-                             &kp LEFT_CONTROL  &mo 2  &kp SPACE    &kp RET  &mo 1  &mo 3
+                             &kp LEFT_CONTROL  &mo 2  &kp SPACE    &kp RET  &mo 1  &kp TAB
             >;
         };
 
@@ -46,7 +46,16 @@
 &trans     &kp EXCLAMATION   &kp RS(MINUS)      &kp RA(N7)  &kp RA(N0)  &kp RA(NON_US_BSLH)    &kp SQT        &kp NON_US_BACKSLASH  &kp RS(NON_US_BSLH)  &kp RA(NUMBER_4)  &kp RS(DOUBLE_QUOTES)  &kp NON_US_HASH
 &trans     &kp RS(NUMBER_6)  &kp HASH           &kp RS(N8)  &kp RS(N9)  &kp RA(NUMBER_2)       &kp RA(MINUS)  &kp RS(COMMA)         &kp RS(PERIOD)       &kp RS(N0)        &kp RS(SLASH)          &kp RS(A)
 &kp LSHFT  &kp PERCENT       &kp RS(BACKSLASH)  &kp RA(N8)  &kp RA(N9)  &kp RA(BACKSLASH)      &kp MINUS      &kp SLASH             &kp RS(NON_US_HASH)  &kp RS(N7)        &kp EQUAL              &trans
-                                                &trans      &trans      &kp SPACE              &kp RET        &trans                &trans
+                                                &trans      &mo 3       &kp SPACE              &kp RET        &trans                &trans
+            >;
+        };
+
+        numbers {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
+                        &trans  &trans  &trans    &trans  &mo 3   &kp N0
             >;
         };
 
@@ -62,15 +71,6 @@
 &kp F7  &kp F8  &kp F9      &kp F10     &kp F11           &kp F12      &trans   &kp LEFT          &kp DOWN      &kp RIGHT_ARROW  &kp TAB  &trans
 &trans  &Lock   &kp K_PREV  &kp K_NEXT  &kp K_PLAY_PAUSE  &trans       &trans   &kp LS(LEFT_ALT)  &kp LALT      &kp LALT         &trans   &trans
                             &kp LGUI    &trans            &kp SPACE    &kp RET  &trans            &trans
-            >;
-        };
-
-        numbers {
-            bindings = <
-&trans  &trans  &kp N7  &kp N8  &kp N9  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp N4  &kp N5  &kp N6  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp N1  &kp N2  &kp N3  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &kp N0  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
